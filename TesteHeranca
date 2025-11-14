@@ -1,0 +1,31 @@
+public class TesteHeranca {
+    public static void main(String[] args) {
+
+
+        Pessoa pessoa = new Pessoa("João Silva", "123.456.789-00", 23);
+        pessoa.exibirDadosBasicos();
+        System.out.println();
+
+
+        Funcionario funcionario = new Funcionario("Maria Santos", "987.654.321-00", 31, 4000.00, "analista");
+        
+
+        funcionario.exibirDadosBasicos();
+        
+
+        double salarioAnualFunc = funcionario.calcularSalarioAnual();
+        System.out.printf("salario anual: R$ " + salarioAnualFunc);
+        System.out.println();
+        System.out.println();
+
+
+        Gerente gerente = new Gerente("Carlos Oliveira", "456.789.123-00", 45, 8000.00, "gerente", "vendas");
+        
+
+        gerente.exibirDadosBasicos();
+        
+
+        gerente.calcularSalarioAnual();
+    }   
+}
+    
