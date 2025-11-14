@@ -12,7 +12,7 @@ public class Pessoa {
     }
 
 
-    public void exibirDados() {
+    public void exibirDadosBasicos() {
         System.out.println("     DADOS BÁSICOS    ");
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);
