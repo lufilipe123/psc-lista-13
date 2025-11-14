@@ -1,0 +1,23 @@
+public class Gerente extends Funcionario {
+
+    private String departamento;
+
+    public Gerente(String nome, String cpf, int idade, double salario, String cargo, String departamento) {
+        super(nome, cpf, idade, salario, cargo);
+        this.departamento = departamento;
+    }
+
+    @Override
+    public void exibirDadosBasicos() {
+        super.exibirDadosBasicos();
+        
+        System.out.println("cargo: " + getCargo());
+        System.out.println("departamento: " + this.departamento);
+        System.out.println("salário mensal: R$ " + getSalario());
+        System.out.println("salário anual: R$ " + calcularSalarioAnual());
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+}
